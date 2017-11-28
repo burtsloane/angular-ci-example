@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
     "name": "angular-ci-example"
@@ -50,8 +50,17 @@
       "config": "./karma.conf.js"
     }
   },
+  "assets": [
+    "assets",
+    "favicon.ico",
+    "web.config"
+  ],
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "spec": false
+    }
   }
 }

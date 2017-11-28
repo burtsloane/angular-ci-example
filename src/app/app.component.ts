@@ -1,11 +1,15 @@
+﻿import { RouterLink } from '@angular/router/router';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
-    <p>
-      app Works!
-    </p>
+    <h1> Angular CI Example! </h1>
+    <nav>
+      <a routerLink="/red">RED</a>
+      <a routerLink="/blue">BLUE</a>
+    </nav>
+    <router-outlet></router-outlet>
   `,
   styles: []
 })
